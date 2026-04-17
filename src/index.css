@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --color-primary: #cb0b0b;
+  --color-bg-dark: #030712;
+}
+
+@layer base {
+  :root {
+    --primary: #cb0b0b;
+    --primary-hover: #ff1a1a;
+    --bg-dark: #030712;
+    --bg-surface: #09090b;
+    --text-bright: #f8fafc;
+    --text-dim: #cbd5e1;
+    --text-muted: #94a3b8;
+    --border-soft: rgba(255, 255, 255, 0.1);
+    --border-primary: rgba(203, 11, 11, 0.5);
+  }
+
+  body {
+    background-color: var(--bg-dark);
+    color: var(--text-bright);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+}
+
+.text-primary { color: var(--primary); }
+.text-dim { color: var(--text-dim); }
+.text-muted { color: var(--text-muted); }
+.bg-primary { background-color: var(--primary); }
+.bg-surface { background-color: var(--bg-surface); }
+.border-soft { border-color: var(--border-soft); }
+.border-primary { border-color: var(--border-primary); }
+
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-card {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #fb7d24, #cb0b0b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-light {
+  background: linear-gradient(135deg, #fb7d24, #cb0b0b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hover-glow {
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 20px var(--border-primary);
+  border-color: var(--primary);
+}
+
+/* Hide scrollbar for clean look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
