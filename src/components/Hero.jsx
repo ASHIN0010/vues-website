@@ -27,10 +27,19 @@ export default function Hero() {
           </motion.div>
 
           <motion.h1
-            className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight mb-8 leading-[1.1]"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
+            className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight mb-8 leading-[1.1] origin-center"
+            initial={{ opacity: 0, scaleX: 0.2, scaleY: 0.01 }}
+            animate={{ 
+              opacity: [0, 1, 1], 
+              scaleX: [0.2, 1, 1], 
+              scaleY: [0.01, 0.01, 1] 
+            }}
+            transition={{ 
+              duration: 0.8, 
+              ease: "circOut", 
+              delay: 0.1,
+              times: [0, 0.25, 1]
+            }}
           >
             {heroContent.headingMain} <span className="text-gradient">{heroContent.headingAccent1}</span> <br />
             {heroContent.headingBreak} <span className="text-gradient-light">{heroContent.headingAccent2}</span>
