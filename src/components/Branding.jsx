@@ -64,7 +64,7 @@ const Branding = () => {
           className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-950/40 border border-red-900/50 text-red-400 text-sm font-medium mb-6"
         >
           <Zap className="w-4 h-4" />
-          <span>Why Flashoot</span>
+          <span>Why Vues</span>
         </motion.div>
         
         <motion.h2 
