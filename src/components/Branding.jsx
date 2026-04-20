@@ -39,14 +39,18 @@ const BrandingCard = ({ feature, index }) => {
         </p>
       </div>
 
-      {/* Visual/Icon Section: On Bottom for Mobile, Left for Desktop */}
-      <div className="w-full h-1/2 md:h-[200px] md:w-[200px] md:min-w-[200px] flex items-center justify-center relative order-2 md:order-1 mt-auto md:mt-0">
+      {/* Visual/Icon Section */}
+      <div className="w-full h-1/2 md:h-[220px] md:w-[220px] md:min-w-[220px] flex items-center justify-center relative order-2 md:order-1 mt-auto md:mt-0">
         <div className="absolute inset-0 bg-gradient-to-t from-[#1c1313] via-transparent to-transparent z-10 md:hidden" />
         
-        {/* Placeholder for massive icon mimicking the image */}
+        {/* Using the generated iPhone Camera Module graphic */}
         <div className="relative z-0 group-hover:scale-110 transition-transform duration-500">
            <div className="absolute inset-0 bg-red-600/20 blur-3xl rounded-full" />
-           <IconComponent className="w-32 h-32 md:w-28 md:h-28 text-white/80 drop-shadow-[0_0_15px_rgba(2dc2,38,38,0.5)]" strokeWidth={1} />
+           <img 
+               src="/src/assets/camera_module.png" 
+               alt="iPhone Camera Module" 
+               className="w-40 h-40 md:w-36 md:h-36 object-contain drop-shadow-[0_0_20px_rgba(203,11,11,0.5)] mix-blend-screen" 
+           />
         </div>
       </div>
     </motion.div>

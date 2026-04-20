@@ -40,8 +40,8 @@ export default function Services() {
               transition={{ delay: i * 0.2 }}
               className="glass-card rounded-3xl p-8 hover:-translate-y-2 transition-transform duration-500 relative overflow-hidden group border border-soft hover:border-primary"
             >
-              <div className="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity transform group-hover:scale-110">
-                {iconMap[service.iconName]}
+              <div className="absolute top-0 right-0 p-4 -mr-10 -mt-10 opacity-[0.03] group-hover:opacity-20 transition-all duration-700 transform group-hover:scale-110 group-hover:translate-x-4 pointer-events-none mix-blend-screen">
+                <img src="/src/assets/camera_module.png" alt="" className="w-56 h-56 object-contain" />
               </div>
               
               <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary mb-6 border border-primary/20">
