@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { heroContent } from '../data';
-import heroImg from '../assets/hero.png';
+import heroImg from '../assets/camera_module.png';
 
 export default function Hero() {
   return (
@@ -66,12 +66,26 @@ export default function Hero() {
         {/* Right Content (Image) */}
         <div className="w-full lg:w-[45%] mt-16 lg:mt-0 relative flex justify-center lg:justify-end z-10">
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
-            className="relative"
+            className="relative w-full max-w-[550px] rounded-[2.5rem] p-[2px] bg-gradient-to-br from-white/20 via-primary/20 to-transparent shadow-[0_0_80px_rgba(203,11,11,0.15)] group"
           >
-            <img src={heroImg} alt="Hero Presentation" className="relative z-10 w-[80%] lg:w-full max-w-[500px] object-contain drop-shadow-[0_20px_50px_rgba(203,11,11,0.2)]" />
+            <div className="relative rounded-[2.5rem] overflow-hidden w-full h-full bg-[#030712]">
+               {/* Ambient inner glow */}
+               <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent z-0"></div>
+               
+               {/* 3D blended image */}
+               <img 
+                 src={heroImg} 
+                 alt="Hero Presentation" 
+                 className="relative z-10 w-full h-[500px] object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 rounded-[2.5rem]" 
+                 style={{ 
+                   WebkitMaskImage: 'radial-gradient(circle at center, black 35%, transparent 80%)', 
+                   maskImage: 'radial-gradient(circle at center, black 35%, transparent 80%)' 
+                 }}
+               />
+            </div>
           </motion.div>
         </div>
       </div>
