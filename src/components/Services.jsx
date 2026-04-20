@@ -14,9 +14,9 @@ export default function Services() {
   return (
     <section id="services" className="py-24 relative bg-surface/50">
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:50px_50px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
-      
+
       <div className="container mx-auto px-6 max-w-7xl relative z-10">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -27,7 +27,7 @@ export default function Services() {
             <h2 className="text-primary uppercase font-mono tracking-widest text-sm font-bold">Services</h2>
             <span className="w-8 h-[2px] bg-primary"></span>
           </div>
-          <h3 className="text-4xl md:text-5xl font-bold tracking-tight">What I <span className="text-gradient">Offer.</span></h3>
+          <h3 className="text-4xl md:text-5xl font-bold tracking-tight">What We <span className="text-gradient">Offer.</span></h3>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -43,14 +43,14 @@ export default function Services() {
               <div className="absolute top-0 right-0 p-4 -mr-10 -mt-10 opacity-[0.03] group-hover:opacity-20 transition-all duration-700 transform group-hover:scale-110 group-hover:translate-x-4 pointer-events-none mix-blend-screen">
                 <img src="/src/assets/camera_module.png" alt="" className="w-56 h-56 object-contain" />
               </div>
-              
+
               <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary mb-6 border border-primary/20">
                 {iconMap[service.iconName]}
               </div>
-              
+
               <h4 className="text-2xl font-bold text-white mb-4">{service.title}</h4>
               <p className="text-dim mb-6 min-h-[80px] leading-relaxed">{service.desc}</p>
-              
+
               <ul className="mb-8 space-y-3">
                 {service.features.map((feature, idx) => (
                   <li key={idx} className="flex items-center gap-3 text-dim group/item">
@@ -59,7 +59,7 @@ export default function Services() {
                   </li>
                 ))}
               </ul>
-              
+
               <div className="pt-6 border-t border-soft flex items-center justify-between">
                 <span className="font-mono text-xl font-bold text-primary">{service.price}</span>
                 <a href="#contact" className="text-xs uppercase text-dim font-bold tracking-widest hover:text-white transition group-hover:underline">
