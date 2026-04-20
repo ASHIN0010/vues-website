@@ -1,12 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Video, Award, Handshake, Check } from 'lucide-react';
+import { Clock, Sun, Heart, Briefcase, Check } from 'lucide-react';
 import { services } from '../data';
 
 const iconMap = {
-  Video: <Video size={32} />,
-  Award: <Award size={32} />,
-  Handshake: <Handshake size={32} />,
+  Clock: <Clock size={32} />,
+  Sun: <Sun size={32} />,
+  Heart: <Heart size={32} />,
+  Briefcase: <Briefcase size={32} />,
 };
 
 export default function Services() {
@@ -29,7 +30,7 @@ export default function Services() {
           <h3 className="text-4xl md:text-5xl font-bold tracking-tight">What I <span className="text-gradient">Offer.</span></h3>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, i) => (
             <motion.div
               key={i}

@@ -96,25 +96,63 @@ export const projects = [
 
 export const services = [
   {
-    iconName: "Video",
-    title: "Content Creation",
-    desc: "High-end video and photo production tailored for your brand's narrative. From concept to post-production.",
-    price: "Start at $500",
-    features: ["4K Video Production", "Cinematic Edits", "Storyboarding"],
+    iconName: "Clock",
+    title: "Hourly Package",
+    desc: "Experience the best with our Hourly Plan, offering top-tier services and advanced features for professional-grade reels.",
+    price: "₹ 1999 + GST",
+    features: [
+      "Up to 60 seconds reel.",
+      "Well trained Reel-maker assigned.",
+      "35 mins shoot time, 10-15 min edit time, 10-15 buffer time.",
+      "Instant reel delivery.",
+      "Shot on iPhone.",
+      "VUES branding included.",
+      "High-quality visuals."
+    ],
   },
   {
-    iconName: "Award",
-    title: "Social Media Reels",
-    desc: "Fast-paced, engaging short-form content optimized for Instagram Reels, TikTok, and YouTube Shorts.",
-    price: "Start at $250",
-    features: ["Trendy Transitions", "Subtitles & Graphics", "Color Grading"],
+    iconName: "Sun",
+    title: "Half Day Package (Up to 3 hours)",
+    desc: "Experience the best with our Half Day Plan, offering top-tier services and advanced features for professional-grade reels.",
+    price: "₹ 4999 + GST",
+    features: [
+      "Up to 60 seconds reel.",
+      "Up to 3 hours of shoot time.",
+      "Deliver up to 2 reels.",
+      "Shot on iPhone.",
+      "VUES branding included.",
+      "Instant reels delivery.",
+      "High-quality visuals.",
+      "Perfect for small events, parties etc."
+    ],
   },
   {
-    iconName: "Handshake",
-    title: "Event Coverage",
-    desc: "Capturing the energy and key moments of your live events, festivals, or corporate gatherings.",
-    price: "Start at $1000",
-    features: ["Multi-cam Setup", "Same-day Edits", "Photo Highlights"],
+    iconName: "Heart",
+    title: "Wedding Package",
+    desc: "Perfect for couples looking for a stunning, professionally crafted wedding shoot that won't break the bank.",
+    price: "₹ 14,999 + GST",
+    features: [
+      "Covers up to one event",
+      "Include 3 Reels",
+      "Shot on iPhone",
+      "Instant reel delivery.",
+      "Complementary Pictures",
+      "Please provide an SD card to receive all raw content if needed.",
+      "VUES Logo Mandatory"
+    ],
+  },
+  {
+    iconName: "Briefcase",
+    title: "Business Package",
+    desc: "Cinematic visuals for premium brands & events. Elevate your brand with polished visual storytelling.",
+    price: "Customised Pricing",
+    features: [
+      "Refined, brand-aligned storytelling",
+      "Professional production with expert direction",
+      "Hassle-free booking & coordination",
+      "Quick turnaround Cut. Polish. Launch",
+      "Ideal for campaigns, launches & brand showcases"
+    ],
   }
 ];
 
