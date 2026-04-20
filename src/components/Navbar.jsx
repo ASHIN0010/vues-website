@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Clapperboard } from 'lucide-react';
 import { FaInstagram } from 'react-icons/fa6';
 import { personalInfo } from '../data';
-import logo from '../assets/LOGO1.png';
+import logo from '../assets/logo.jpg';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);

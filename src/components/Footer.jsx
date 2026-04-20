@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaInstagram, FaYoutube, FaTwitter, FaLinkedin } from 'react-icons/fa6';
 import { personalInfo } from '../data';
-import logo from '../assets/LOGO1.png';
+import logo from '../assets/logo.jpg';
 
 export default function Footer() {
   return (
