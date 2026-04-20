@@ -3,7 +3,7 @@ export const personalInfo = {
   title: "Creative Director & Content Creator",
   experience: "2+ Years",
   email: "supportvues@gmail.com",
-  phone: "+91 7306147446",
+  phone: "+91 9400458734",
   location: "Chalakudy, Thrissur, Kerala",
   socials: {
     instagram: "https://www.instagram.com/vues.in?igsh=MXJtaXFsaDMyZ3ZhcQ==",
